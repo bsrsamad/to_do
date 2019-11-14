@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+</head>
+
+<body>
+    <div class="jug">
+        <form id="form"> 
+        <label for="task" class="mr-3 mt-5">Task</label>
+            <input type="textarea" id="task"><br>
+            <label for="time" class="mr3-3 mt-2">Time</label>
+            <input type="textarea" id="time"><br>
+            
+            <label for="date" class="mr3-3 mt-2">date created</label>
+            <input type="date" id="date"><br>
+            <label for="day" class="mr-3  mt-2">day</label>
+            <select name="days" id="day">
+                <option value="monday">monday</option>
+                <option value="tuesday">tuesday</option>
+                <option value="wednesday">wednesday</option>
+                <option value="thursday">thursday</option>
+                <option value="friday">friday</option>
+                <option value="saturday">saturday</option>
+                <option value="sunday">sunday</option>
+            </select>
+            <br>
+            <label for="status">status</label>
+            <select name="status" id="status">
+                <option value=" pending">pending</option>
+                <option value="processing">processing</option>
+                <option value="complete">complete</option>
+            </select>
+            <br>
+            <button type="submit">OK</button>
+            </form>
+    </div>
+
+    <table class="table table-bordered">
+            <thead>
+              <tr>
+               
+                <th scope="col">task</th>
+                <th scope="col">time</th>
+                <th scope="col">day</th>
+                <th scope="col">status</th>
+                <th scope="col">date created</th>
+              </tr>
+            </thead>
+            <tbody id="gh" >
+              <!-- <tr>
+                
+                <td><span id="first"></span></td>
+                <td><span id="second"></span></td>
+                <td><span id="third"></span></td>
+                <td><span id="forth"></span></td>
+                <td><span id="fifth"></span></td>
+              </tr> -->
+            </tbody>
+          </table>
+<!-- <form class="container col-md-8 my-5" id="form">
+  <div class="form-group">
+    <label for ="name">name</label>
+    <input type="text"  class="form-control" id="name" aria-describedby="name"
+    placeholder="enter name" />
+
+  </div>
+  <button type="submit" class="btn btn-primary" >submit</button>
+</form>
+<ul id="classnames" class="container col-md-8 my-5">
+  <li > samad</li>
+  <li> winner</li>
+</ul> -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/popper.js"></script> -->
+    <script src="assets/js/mine.js"></script>
+</body>
+
+</html>
